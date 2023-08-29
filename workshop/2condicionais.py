@@ -35,8 +35,3 @@ valor_preta = caneta_preta * 2.5
 valor_azul = caneta_azul * 2.0
 valor_final = valor_preta + valor_azul
 print(valor_final)
-#nono exercicio 
-nome1 = input()
-nomes = ["joao maia",  "joao abrantes", "pedro"]
-if nome1 == nomes[0,1,2]:
-    print(f"ola ,eu nome é {nomes} ")
