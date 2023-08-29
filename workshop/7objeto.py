@@ -12,3 +12,14 @@ pedro.saudacao()
 
 guilherme = Pessoa("Guilherme", 18, 'estudante')
 guilherme.saudacao
+
+class Banco():
+    def __init__(self, titular, saldos, sacar, depositar):
+        self.titular = titular
+        self.saldos = saldos
+        def sacar(self, dinheiro):
+            self = dinheiro 
+
+        self.depositar = depositar
+
+
