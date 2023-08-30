@@ -34,4 +34,45 @@ banco.depositar("500")
 banco = ContaBancaria('Igor', 1000)
 banco.sacar("1000")
 
+class FormaGeometrica:
+    def calcular_area(self, raio):
+        return 3.14*(raio**2)
+class Circulo(FormaGeometrica):
+    pass
+class Retangulo(FormaGeometrica):
+    def calcular_area(self, base, altura):
+        return base * altura
+
+circulo = Circulo()
+area = circulo.calcular_area(20)
+print(area)
+
+retangulo = Retangulo()
+area = retangulo.calcular_area(5,10)
+print(area)
+
+
+class Animal:
+    def barulho(self):
+        pass 
+
+class Cachorro(Animal):
+    def barulho(self):
+        return "auuuu"
+    
+class Gato(Animal):
+    def barulho(self):
+       return "miaaauu"
+
+def animal_barulho(animal):
+    print(animal.barulho())
+
+cachorro = Cachorro()
+gato = Gato()
+
+
+animal_barulho(cachorro)
+animal_barulho(gato)
+
+
 
