@@ -13,13 +13,25 @@ pedro.saudacao()
 guilherme = Pessoa("Guilherme", 18, 'estudante')
 guilherme.saudacao
 
-class Banco():
-    def __init__(self, titular, saldos, sacar, depositar):
+class ContaBancaria():
+    def __init__(self, titular, saldo):
         self.titular = titular
-        self.saldos = saldos
-        def sacar(self, dinheiro):
-            self = dinheiro 
+        self.saldo = saldo
 
-        self.depositar = depositar
+    def depositar(self, op):
+        saldo_final = int(self.saldo) + int(op)
+        print (f'Olá {self.titular}, você depositou. Seu saldo é de {saldo_final}')
+
+    def sacar(self, op):
+        saldo_final = int(self.saldo) - int(op)
+        print (f'Olá {self.titular}, você sacou. Seu saldo é de {saldo_final}')
+    
+    
+banco = ContaBancaria('Igor', 1000)
+banco.depositar("500")
+
+    
+banco = ContaBancaria('Igor', 1000)
+banco.sacar("1000")
 
 
